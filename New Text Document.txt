@@ -1,0 +1,5 @@
+git init
+status
+add
+commit -m 'massege'
+git push
