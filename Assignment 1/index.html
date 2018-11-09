@@ -1,0 +1,130 @@
+<!DOCTYPE HTML>
+<html>
+    <header>
+        <link rel="stylesheet" type="text/css" href="css/style.css">
+        <link rel="icon" href="images/avatar.png" type="image/pngavatars="16x16">
+        
+        <script type="text/javascript">                              
+                
+                function welcome(){
+                    alert("Welcome to visit this Website!");
+                }
+                
+                function thank(){
+                    var fName = document.getElementById("fName").value;
+                    var lName = document.getElementById("lName").value;
+                    document.getElementById("display").innerHTML = "Thank You <b>" + lName + ", " + fName + "!</b> for taking part in our Survey.";
+                }
+                
+                function confirmSelection(){
+                    var element = document.getElementById("favProgram");
+                    var selection = element.options[element.selectedIndex].text;
+                    
+                    if(selection!=null){                        
+                        document.getElementById("confirm").innerHTML = "You Selected <b>" + selection + "</b>";
+                    }   
+                }
+                
+                
+                function resetForm(){
+                    document.getElementById("confirm").innerHTML = "Make your selection here!";
+                    document.getElementById("display").innerHTML = "Display Here!";
+                }
+                
+                function myFocus(element) {
+                    element.style.background = "rgba(255,0,0,0.1)";                   
+                }
+                
+                function myBlur(element) {
+                    element.style.background = "white";
+                }
+                
+            </script>
+        
+    </header>
+    <body onload="welcome()">
+        <main>
+            <header>
+                <a href="index.html"><img alt="avatar" src="images/avatar.pngAvatar"></a>
+                <h1>Avatar TECH.</h1>
+            </header>
+            <nav>
+                <div id="home">
+                    <a href="index.html">Home</a>
+                </div>
+                <div id="aboutme">
+                    <a href="aboutme.html">About Me</a>
+                </div>
+                <div id="myarticles">
+                    <a href="myarticles.html">My Articles</a>
+                </div>
+                <div id="Contactme">
+                    <a href="contactme.html">Contact Me</a>
+                </div>
+                
+            </nav>
+            <div id="container">
+                <section id="loreum">
+                    <h3>The standard Lorem Ipsum passage, used since the 1500s</h3>
+                        <p>
+                            "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."
+                        </p>
+                        
+                        <h3>Section 1.10.32 of "de Finibus Bonorum et Malorum", written by Cicero in 45 BC</h3>
+                        <p>
+                            "Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem. Ut enim ad minima veniam, quis nostrum exercitationem ullam corporis suscipit laboriosam, nisi ut aliquid ex ea commodi consequatur? Quis autem vel eum iure reprehenderit qui in ea voluptate velit esse quam nihil molestiae consequatur, vel illum qui dolorem eum fugiat quo voluptas nulla pariatur?"
+                        </p>
+                        
+                        <h3>Section 1.10.33 of "de Finibus Bonorum et Malorum", written by Cicero in 45 BC</h3>
+                        <p>
+                            "At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum deleniti atque corrupti quos dolores et quas molestias excepturi sint occaecati cupiditate non provident, similique sunt in culpa qui officia deserunt mollitia animi, id est laborum et dolorum fuga. Et harum quidem rerum facilis est et expedita distinctio. Nam libero tempore, cum soluta nobis est eligendi optio cumque nihil impedit quo minus id quod maxime placeat facere possimus, omnis voluptas assumenda est, omnis dolor repellendus. Temporibus autem quibusdam et aut officiis debitis aut rerum necessitatibus saepe eveniet ut et voluptates repudiandae sint et molestiae non recusandae. Itaque earum rerum hic tenetur a sapiente delectus, ut aut reiciendis voluptatibus maiores alias consequatur aut perferendis doloribus asperiores repellat."
+                        </p>
+                </section>
+               <!-- <article>
+                    
+                </article> -->
+                <aside>
+                    <form>
+                            <label>First Name:</label>
+                            <input type="text" name="fName" placeholder="First Name" size="30" id="fName" oninput="thank();" onfocus="myFocus(this);" onblur="myBlur(this);">
+                            
+                            <label>Last Name:</label>
+                            <input type="text" name="lName" placeholder="Last Name" size="30" id="lName" oninput="thank();"  onfocus="myFocus(this);" onblur="myBlur(this);">
+                            
+                            <label>Telephone No:</label>
+                            <input type="tel" name="telephone" placeholder="Last Name" size="30" id="tel" oninput="thank();"  onfocus="myFocus(this);" onblur="myBlur(this);">
+                            
+                            
+                            <label>Gender:</label>
+                            <input type="radio" name="gender" value="Female"><label class="labelInLine">Female</label></td>
+                            <input type="radio" name="gender" value="Male"><label class="labelInLine">Male</label></td>
+                                                                                 
+                            <label>Your Favorite Services:</label>
+                            <select name="favProgram" id="favProgram" onchange="confirmSelection();"  onfocus="myFocus(this);" onblur="myBlur(this);">
+                                <option value="WebDesign">Web Design</option>
+                                <option value="LogoDesign">Logo Design</option>
+                                <option value="SEO">SEO</option>
+                                <option value="InternetMarketing">Internet Marketing</option>
+                                <option value="ContentDevelopment">Content Development</option>
+                                <option value="WebsiteMaintenance">Website Maintenance</option>
+                            </select>
+                            
+                             <p id="confirm">Make your selection!</p>
+                            
+                            <label>Subscription:</label>
+                            <input type="checkbox" name="newsletter"><label class="labelInLine">I would like to Subscribe to your news letter</label><br>
+                            <input type="checkbox" name="email"><label class="labelInLine">I Accept to Receive Email</label><br>
+                            <input type="checkbox" name="phone"><label class="labelInLine">I Accept to Receive Phone Calls</label><br>
+                            
+                            <input type="submit" name="Submitt" value="Submit" class="button" id="submit" onclick="alert('Thanks for your time.');">
+                            <input type="reset" name="Reset" value="Reset" class="button" id="reset" onclick="resetForm();">
+                        </form>
+                </aside>
+            </div>
+            <footer>
+                <!-- <a href="#top">&uarr;</a>  -->
+                <p>&copy; 2018 Walta Web Development INC. All Rights Reserved.</p>
+            </footer>
+        </main>
+    </body>
+</html>

@@ -1,0 +1,52 @@
+.name {
+    font-family: Arial;
+    color: #8B0987;
+    margin: 0;
+    text-align: center;
+    font-size: 80px;
+}
+
+.address {
+        font-family: Arial;
+        color: #707171;
+        text-align: center;
+        font-size: 40px;
+        padding-bottom: 30px;
+    }
+.img {
+    max-width: 40%;
+    height: auto;
+}
+.link { 
+    text-align: center;
+height: 10px;
+width: auto;
+margin: center;
+}
+.h1 {
+    font-family: monospace;
+    font-size: 20px;
+}
+.p {
+    font-family: Arial;
+    color: #707171;
+   }
+
+.p1 {
+    font-family: Arial;
+    color: #707171;
+    margin: 20px;
+    text-align: left;
+}
+
+.copy {
+    font-family: Arial;
+    color: #707171;
+    margin: 0;
+    text-align: center;
+    font-size: 20px;
+}
+.map{
+    text-align: center;
+
+}

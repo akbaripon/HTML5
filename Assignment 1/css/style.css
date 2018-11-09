@@ -1,0 +1,155 @@
+
+ main {
+    width: 70%;
+    margin: auto;
+ }
+ 
+ header {
+    display: flex;
+    flex-wrap: wrap;
+    align-content: center;
+    
+    display: -webkit-flex;
+    -webkit-flex-wrap: wrap;
+    -webkit-align-content: center;
+ }
+ 
+ header img {
+    width: 150px;
+    height: 150px;
+        
+ }
+ 
+ header  h1 {
+    margin: auto;
+   text-align: center;   
+ }
+ 
+ nav {
+    display: flex;
+    flex-wrap: wrap;
+    align-content: center;
+    
+    display: -webkit-flex;
+    -webkit-flex-wrap: wrap;
+    -webkit-align-content: center;
+ }
+ 
+ nav div {
+    width: 24.6%;
+    text-align: center;
+       border-right: 2px solid white;
+ }
+ 
+ nav div #contactme {
+    border-right: none;
+ }
+ 
+ nav div a {
+    color: white;
+    text-decoration: none;
+ }
+ 
+ #container {
+    display: flex;
+    flex-wrap: wrap;
+    align-content: center;
+    
+    display: -webkit-flex;
+    -webkit-flex-wrap: wrap;
+    -webkit-align-content: center;
+ }
+ 
+ section#loreum {
+   width: 55%;
+ }
+ 
+ section#skills {
+   width: 100%;
+ }
+ 
+ aside {
+  width: 39%;
+  float: right;
+  width: 35%;    
+  padding: 4%;       
+}
+
+table {
+    width: 100%;
+    height: 200px;
+    margin: auto;
+    border-collapse: collapse;
+    border:1px solid black;
+    
+}
+
+th {
+    text-align: center;
+    padding: 15px;
+}
+
+td {
+    padding: 15px;
+}
+ 
+ input[type=text], select {
+    width: 100%;
+    box-sizing: border-box;
+    border: 2px solid #ccc;
+    border-radius: 4px;
+    font-size: 16px;    
+    padding: 6px 10px 6px 10px;    
+}
+
+label {
+    display: block;      
+    margin-top: 30px;
+    margin-bottom: 10px;
+    font-size: 1em;
+    color: #555;
+    font-weight: bold;
+}
+
+.labelInLine {
+    display: inline;    
+}
+
+.button {
+        border: none;
+    border-radius: 5px;
+    color: white;
+    padding: 5px 20px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 40px 30px;
+}
+
+.button:hover {
+    
+}
+
+#footer {
+    background-color: #555;      
+    color: white;
+    width: 100%;
+    float: left;
+    text-align: center;
+    margin-top: 50px;
+} 
+ 
+ footer {
+   background-color: #555;
+   color: white;
+ }
+ 
+ footer p {
+   text-align: center;
+ }
+ 
+ footer a {
+    display: block;
+    float: right;
+ }
